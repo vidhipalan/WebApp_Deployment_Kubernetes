@@ -1,0 +1,301 @@
+[2025-04-06T17:40:42.048+0000] [] [[1;93mWARNING[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961242048] [levelValue: 900] Payara Micro Runtime directory is located in a temporary file location which can be cleaned by system processes.
+
+[2025-04-06T17:40:42.061+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961242061] [levelValue: 800] Payara Micro Runtime directory is located at /tmp/payaramicro-rt9793910230705801596tmp
+
+[2025-04-06T17:40:42.065+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.micro.boot.runtime.PayaraMicroRuntimeBuilder[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961242065] [levelValue: 800] Built Payara Micro Runtime
+
+[2025-04-06T17:40:42.563+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.boot.runtime.BootCommand[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961242563] [levelValue: 800] [[
+  Boot Command set returned with result SUCCESS : PlainTextActionReporterSUCCESSDescription: set AdminCommandnull
+    configs.config.server-config.hazelcast-config-specific-configuration.lite=false
+]]
+
+[2025-04-06T17:40:42.574+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.boot.runtime.BootCommand[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961242574] [levelValue: 800] [[
+  Boot Command set returned with result SUCCESS : PlainTextActionReporterSUCCESSDescription: set AdminCommandnull
+    hazelcast-runtime-configuration.host-aware-partitioning=true
+]]
+
+[2025-04-06T17:40:42.578+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.boot.runtime.BootCommand[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961242578] [levelValue: 800] [[
+  Boot Command set returned with result SUCCESS : PlainTextActionReporterSUCCESSDescription: set AdminCommandnull
+    hazelcast-runtime-configuration.discovery-mode=multicast
+]]
+
+[2025-04-06T17:40:42.857+0000] [] [[1;92mINFO[0m] [] [[1;94morg.glassfish.ha.store.spi.BackingStoreFactoryRegistry[0m] [tid: _ThreadID=40 _ThreadName=RunLevelControllerThread-1743961242583] [timeMillis: 1743961242857] [levelValue: 800] Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry
+
+[2025-04-06T17:40:44.591+0000] [] [[1;93mWARNING[0m] [] [[1;94mcom.hazelcast.internal.jmx.ManagementService[0m] [tid: _ThreadID=69 _ThreadName=hz.dreamy_mendeleev.event-5] [timeMillis: 1743961244591] [levelValue: 900] [[
+  [10.1.0.22]:6900 [development] [5.3.6] Error while registering com.hazelcast:name=payara.micro.cdi.event,instance=dreamy_mendeleev,type=ITopic
+javax.management.InstanceAlreadyExistsException: com.hazelcast:name=payara.micro.cdi.event,instance=dreamy_mendeleev,type=ITopic
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:322)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1848)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:945)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:880)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:315)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:523)
+	at com.hazelcast.internal.jmx.ManagementService.registerDistributedObject(ManagementService.java:153)
+	at com.hazelcast.internal.jmx.ManagementService.distributedObjectCreated(ManagementService.java:136)
+	at com.hazelcast.spi.impl.proxyservice.impl.ProxyEventProcessor.run(ProxyEventProcessor.java:53)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.process(StripedExecutor.java:245)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.run(StripedExecutor.java:228)
+]]
+
+[2025-04-06T17:40:44.652+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.hazelcast.HazelcastCore[0m] [tid: _ThreadID=38 _ThreadName=RunLevelControllerThread-1743961242580] [timeMillis: 1743961244652] [levelValue: 800] Hazelcast Instance Bound to JNDI at payara/Hazelcast
+
+[2025-04-06T17:40:44.652+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.hazelcast.HazelcastCore[0m] [tid: _ThreadID=38 _ThreadName=RunLevelControllerThread-1743961242580] [timeMillis: 1743961244652] [levelValue: 800] JSR107 Caching Provider Bound to JNDI at payara/CachingProvider
+
+[2025-04-06T17:40:44.652+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.hazelcast.HazelcastCore[0m] [tid: _ThreadID=38 _ThreadName=RunLevelControllerThread-1743961242580] [timeMillis: 1743961244652] [levelValue: 800] JSR107 Default Cache Manager Bound to JNDI at payara/CacheManager
+
+[2025-04-06T17:40:44.723+0000] [] [[1;92mINFO[0m] [NCLS-CORE-00101] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=38 _ThreadName=RunLevelControllerThread-1743961242580] [timeMillis: 1743961244723] [levelValue: 800] Network Listener http-listener started in: 4ms - bound to [/0.0.0.0:8080]
+
+[2025-04-06T17:40:44.724+0000] [] [[1;92mINFO[0m] [NCLS-CORE-00058] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=38 _ThreadName=RunLevelControllerThread-1743961242580] [timeMillis: 1743961244724] [levelValue: 800] Network listener https-listener on port 8443 disabled per domain.xml
+
+[2025-04-06T17:40:44.725+0000] [] [[1;92mINFO[0m] [NCLS-CORE-00087] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=38 _ThreadName=RunLevelControllerThread-1743961242580] [timeMillis: 1743961244725] [levelValue: 800] Grizzly 4.0.0 started in: 1,948ms - bound to [http-listener:8080]
+
+[2025-04-06T17:40:44.745+0000] [] [[1;92mINFO[0m] [] [[1;94mio.opentelemetry.api.GlobalOpenTelemetry[0m] [tid: _ThreadID=40 _ThreadName=RunLevelControllerThread-1743961242583] [timeMillis: 1743961244745] [levelValue: 800] AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+
+[2025-04-06T17:40:44.768+0000] [] [[1;92mINFO[0m] [NCLS-CORE-00017] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961244768] [levelValue: 800] Payara Micro 6.2025.1 #badassmicrofish (28) startup time : Embedded (512ms), startup services(2,190ms), total(2,702ms)
+
+[2025-04-06T17:40:44.769+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.cluster.PayaraCluster[0m] [tid: _ThreadID=100 _ThreadName=Executor-Service-2] [timeMillis: 1743961244769] [levelValue: 800] [[
+  Data Grid Status 
+Payara Data Grid State: DG Version: 5 DG Name: development DG Size: 2
+Instances: {
+ DataGrid: development Name: Fragile-Medusafish Lite: false This: false UUID: 4d363e49-b7d7-4605-8acf-f1c6760e518d Address: /10.1.0.21:6900
+ DataGrid: development Name: Shiny-Koi Lite: false This: true UUID: e233e2fd-596c-4ee6-ae31-4a1a6efbb307 Address: /10.1.0.22:6900
+}]]
+
+[2025-04-06T17:40:44.864+0000] [] [[1;92mINFO[0m] [NCLS-JMX-00006] [[1;94mjavax.enterprise.system.jmx[0m] [tid: _ThreadID=113 _ThreadName=Thread-7] [timeMillis: 1743961244864] [levelValue: 800] JMXStartupService has disabled JMXConnector system
+
+[2025-04-06T17:40:45.292+0000] [] [[1;92mINFO[0m] [] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961245292] [levelValue: 800] No deployment transformer implementation found.
+
+[2025-04-06T17:40:45.464+0000] [] [[1;92mINFO[0m] [NCLS-SECURITY-01002] [[1;94mjavax.enterprise.system.core.security[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961245464] [levelValue: 800] Java security manager is disabled.
+
+[2025-04-06T17:40:45.464+0000] [] [[1;92mINFO[0m] [NCLS-SECURITY-01010] [[1;94mjavax.enterprise.system.core.security[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961245464] [levelValue: 800] Entering Security Startup Service.
+
+[2025-04-06T17:40:45.464+0000] [] [[1;92mINFO[0m] [NCLS-SECURITY-01143] [[1;94mjavax.enterprise.system.core.security[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961245464] [levelValue: 800] Loading policy provider fish.payara.security.jacc.provider.PolicyProviderImpl.
+
+[2025-04-06T17:40:45.486+0000] [] [[1;92mINFO[0m] [NCLS-SECURITY-01011] [[1;94mjavax.enterprise.system.core.security[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961245486] [levelValue: 800] Security Service(s) started successfully.
+
+[2025-04-06T17:40:45.609+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00198] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961245609] [levelValue: 800] Created HTTP listener http-listener on host/port 0.0.0.0:8080
+
+[2025-04-06T17:40:45.620+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00200] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961245620] [levelValue: 800] Created virtual server server
+
+[2025-04-06T17:40:45.698+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00201] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961245698] [levelValue: 800] Virtual server server loaded default web module 
+
+[2025-04-06T17:40:46.109+0000] [] [[1;93mWARNING[0m] [] [[1;94mjakarta.enterprise.web.util[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961246109] [levelValue: 900] The web application [unknown] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+
+[2025-04-06T17:40:46.124+0000] [] [[1;92mINFO[0m] [] [[1;94morg.jboss.weld.Version[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961246124] [levelValue: 800] WELD-000900: 5.0.1 (p1)
+
+[2025-04-06T17:40:46.208+0000] [] [[1;92mINFO[0m] [AS-EJB-00054] [[1;94mjakarta.enterprise.ejb.container[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961246208] [levelValue: 800] Portable JNDI names for EJB InitBean: [java:global/clinic-webapp/InitBean!edu.stevens.cs548.clinic.service.init.InitBean, java:global/clinic-webapp/InitBean]
+
+[2025-04-06T17:40:46.805+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961246805] [levelValue: 800] Clustered CDI Event bus initialized
+
+[2025-04-06T17:40:46.849+0000] [] [[1;92mINFO[0m] [] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961246849] [levelValue: 800] clinic-webapp was successfully deployed in 1,927 milliseconds.
+
+[2025-04-06T17:40:46.851+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961246851] [levelValue: 800] Deployed 1 archive(s)
+
+[2025-04-06T17:40:46.867+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.service.init.InitBean[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961246867] [levelValue: 800] Your name here: 
+
+Your name here!
+[2025-04-06T17:40:46.990+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961246990] [levelValue: 800] deleteProviders: Deleting all providers in microservice client!
+
+[2025-04-06T17:40:47.084+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247084] [levelValue: 800] deletePatients: Deleting all patients in microservice client!
+
+[2025-04-06T17:40:47.100+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247100] [levelValue: 800] addPatient: Adding patient John Doe in microservice client!
+
+[2025-04-06T17:40:47.140+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247140] [levelValue: 800] addProvider: Adding provider Jane Doe in microservice client!
+
+[2025-04-06T17:40:47.152+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247152] [levelValue: 800] addTreatment: Adding treatment for John Doe in microservice client!
+
+[2025-04-06T17:40:47.184+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247184] [levelValue: 800] getPatients: Getting all patients in microservice client!
+
+[2025-04-06T17:40:47.189+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247189] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.PatientDto>
+
+[2025-04-06T17:40:47.191+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.service.init.InitBean[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247191] [levelValue: 800] Patient John Doe, ID 74888b34-5949-4eb4-b80c-ed8b15b84a12, DOB 1995-08-15
+
+[2025-04-06T17:40:47.192+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247192] [levelValue: 800] getProviders: Getting all providers in microservice client!
+
+[2025-04-06T17:40:47.196+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247196] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.ProviderDto>
+
+[2025-04-06T17:40:47.197+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.service.init.InitBean[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247197] [levelValue: 800] Provider Jane Doe, ID a4383764-6c6b-4145-80e9-6be2ba27e5ad, NPI 1234
+
+[2025-04-06T17:40:47.204+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00130] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247204] [levelValue: 800] Invalid Session Management Configuration for non-distributable app [clinic-webapp] - defaulting to memory: persistence-type = [hazelcast] / persistenceFrequency = [web-method] / persistenceScope = [modified-session]
+
+[2025-04-06T17:40:47.217+0000] [] [[1;92mINFO[0m] [] [[1;94morg.glassfish.soteria.servlet.SamRegistrationInstaller[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247217] [levelValue: 800] Initializing Soteria 3.0.3.payara-p1 for context '/api'
+
+[2025-04-06T17:40:47.234+0000] [] [[1;92mINFO[0m] [faces.config.listener.version] [[1;94mjakarta.enterprise.resource.webcontainer.faces.config[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247234] [levelValue: 800] Initializing Mojarra 4.0.9.payara-p1 for context '/api'
+
+[2025-04-06T17:40:47.470+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00172] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247470] [levelValue: 800] Loading application [clinic-webapp] at [/api]
+
+[2025-04-06T17:40:47.477+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247477] [levelValue: 800] [[
+  {
+    "Instance Configuration": {
+        "Host": "clinic-webapp-59ccb9884d-tx5wd",
+        "Http Port(s)": "8080",
+        "Https Port(s)": "",
+        "Instance Name": "Shiny-Koi",
+        "Instance Group": "MicroShoal",
+        "Hazelcast Member UUID": "e233e2fd-596c-4ee6-ae31-4a1a6efbb307",
+        "Deployed": [
+            {
+                "Name": "clinic-webapp",
+                "Type": "war",
+                "Context Root": "/api"
+            }
+        ]
+    }
+}]]
+
+[2025-04-06T17:40:47.479+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247479] [levelValue: 800] [[
+  
+Payara Micro URLs:
+http://clinic-webapp-59ccb9884d-tx5wd:8080/api
+
+]]
+
+[2025-04-06T17:40:47.479+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1743961247479] [levelValue: 800] Payara Micro 6.2025.1 #badassmicrofish (build 28) ready in 5,468 (ms)
+
+[2025-04-06T17:41:37.783+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961297783] [levelValue: 800] getPatients: Getting all patients in microservice client!
+
+[2025-04-06T17:41:37.846+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961297846] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.PatientDto>
+
+[2025-04-06T17:41:39.455+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961299455] [levelValue: 800] getPatient: Getting patient 74888b34-5949-4eb4-b80c-ed8b15b84a12 in microservice client!
+
+[2025-04-06T17:41:39.490+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961299490] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.PatientDto (generic type edu.stevens.cs548.clinic.service.dto.PatientDto
+
+[2025-04-06T17:41:39.498+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961299498] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /patient/view-patient.xhtml
+
+[2025-04-06T17:42:02.503+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961322503] [levelValue: 800] getTreatment: Getting treatment f0e241be-2269-4605-b95a-d4fabe2e0472 in microservice client!
+
+[2025-04-06T17:42:02.539+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961322539] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.TreatmentDto (generic type edu.stevens.cs548.clinic.service.dto.TreatmentDto
+
+[2025-04-06T17:42:02.544+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961322544] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /treatment/view-treatment.xhtml
+
+[2025-04-06T17:42:04.694+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961324694] [levelValue: 800] getPatients: Getting all patients in microservice client!
+
+[2025-04-06T17:42:04.712+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961324712] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.PatientDto>
+
+[2025-04-06T17:42:33.091+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.cluster.PayaraCluster[0m] [tid: _ThreadID=68 _ThreadName=hz.dreamy_mendeleev.event-4] [timeMillis: 1743961353091] [levelValue: 800] Data Grid Instance Added 8bc318f9-9648-430c-9fcf-33f21beb7366 at Address /10.1.0.23:6900
+
+[2025-04-06T17:42:33.097+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.cluster.PayaraCluster[0m] [tid: _ThreadID=68 _ThreadName=hz.dreamy_mendeleev.event-4] [timeMillis: 1743961353097] [levelValue: 800] [[
+  Data Grid Status 
+Payara Data Grid State: DG Version: 5 DG Name: development DG Size: 3
+Instances: {
+ DataGrid: development Name: Fragile-Medusafish Lite: false This: false UUID: 4d363e49-b7d7-4605-8acf-f1c6760e518d Address: /10.1.0.21:6900
+ DataGrid: development Name: Shiny-Koi Lite: false This: true UUID: e233e2fd-596c-4ee6-ae31-4a1a6efbb307 Address: /10.1.0.22:6900
+ DataGrid: development Lite: false This: false UUID: 8bc318f9-9648-430c-9fcf-33f21beb7366 Address: /10.1.0.23:6900
+}]]
+
+[2025-04-06T17:43:23.294+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961403294] [levelValue: 800] getPatient: Getting patient 74888b34-5949-4eb4-b80c-ed8b15b84a12 in microservice client!
+
+[2025-04-06T17:43:23.351+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961403351] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.PatientDto (generic type edu.stevens.cs548.clinic.service.dto.PatientDto
+
+[2025-04-06T17:43:23.354+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961403354] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /patient/view-patient.xhtml
+
+[2025-04-06T17:43:34.960+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961414960] [levelValue: 800] getTreatment: Getting treatment f0e241be-2269-4605-b95a-d4fabe2e0472 in microservice client!
+
+[2025-04-06T17:43:34.982+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961414982] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.TreatmentDto (generic type edu.stevens.cs548.clinic.service.dto.TreatmentDto
+
+[2025-04-06T17:43:34.983+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961414983] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /treatment/view-treatment.xhtml
+
+[2025-04-06T17:43:37.080+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961417080] [levelValue: 800] getProviders: Getting all providers in microservice client!
+
+[2025-04-06T17:43:37.105+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961417105] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.ProviderDto>
+
+[2025-04-06T17:43:37.875+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961417875] [levelValue: 800] getProvider: Getting provider a4383764-6c6b-4145-80e9-6be2ba27e5ad in microservice client!
+
+[2025-04-06T17:43:37.907+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961417907] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.ProviderDto (generic type edu.stevens.cs548.clinic.service.dto.ProviderDto
+
+[2025-04-06T17:43:37.910+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961417910] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /provider/view-provider.xhtml
+
+[2025-04-06T17:43:57.514+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961437514] [levelValue: 800] getTreatment: Getting treatment f0e241be-2269-4605-b95a-d4fabe2e0472 in microservice client!
+
+[2025-04-06T17:43:57.550+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961437550] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.TreatmentDto (generic type edu.stevens.cs548.clinic.service.dto.TreatmentDto
+
+[2025-04-06T17:43:57.553+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961437553] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /treatment/view-treatment.xhtml
+
+[2025-04-06T17:46:47.927+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961607927] [levelValue: 800] getPatients: Getting all patients in microservice client!
+
+[2025-04-06T17:46:48.000+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961608000] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.PatientDto>
+
+[2025-04-06T17:46:48.910+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961608910] [levelValue: 800] getPatients: Getting all patients in microservice client!
+
+[2025-04-06T17:46:48.928+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961608928] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.PatientDto>
+
+[2025-04-06T17:46:49.693+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961609693] [levelValue: 800] getPatient: Getting patient a827cc5e-b80b-4719-8597-658197eeddf1 in microservice client!
+
+[2025-04-06T17:46:49.714+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961609714] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.PatientDto (generic type edu.stevens.cs548.clinic.service.dto.PatientDto
+
+[2025-04-06T17:46:49.716+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961609716] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /patient/view-patient.xhtml
+
+[2025-04-06T17:47:02.526+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961622526] [levelValue: 800] getProviders: Getting all providers in microservice client!
+
+[2025-04-06T17:47:02.543+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961622543] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.ProviderDto>
+
+[2025-04-06T17:47:03.413+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961623413] [levelValue: 800] getProvider: Getting provider 8ec1e51f-730c-4205-9c8a-07d8bc47e3c6 in microservice client!
+
+[2025-04-06T17:47:03.434+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961623434] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.ProviderDto (generic type edu.stevens.cs548.clinic.service.dto.ProviderDto
+
+[2025-04-06T17:47:03.436+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961623436] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /provider/view-provider.xhtml
+
+[2025-04-06T17:47:04.395+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961624395] [levelValue: 800] getTreatment: Getting treatment 43088c59-aad7-48bc-aca1-b213404d281f in microservice client!
+
+[2025-04-06T17:47:04.417+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961624417] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.TreatmentDto (generic type edu.stevens.cs548.clinic.service.dto.TreatmentDto
+
+[2025-04-06T17:47:04.418+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961624418] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /treatment/view-treatment.xhtml
+
+[2025-04-06T17:47:06.392+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961626392] [levelValue: 800] getTreatment: Getting treatment 8a35b64e-4b79-4941-9239-a64847c43dd3 in microservice client!
+
+[2025-04-06T17:47:06.416+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961626416] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.TreatmentDto (generic type edu.stevens.cs548.clinic.service.dto.TreatmentDto
+
+[2025-04-06T17:47:06.417+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961626417] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /treatment/view-treatment.xhtml
+
+[2025-04-06T17:47:07.112+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961627112] [levelValue: 800] getTreatment: Getting treatment 900679de-5d6b-4084-8667-2e2028ac465a in microservice client!
+
+[2025-04-06T17:47:07.134+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961627134] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.TreatmentDto (generic type edu.stevens.cs548.clinic.service.dto.TreatmentDto
+
+[2025-04-06T17:47:07.135+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961627135] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /treatment/view-treatment.xhtml
+
+[2025-04-06T17:47:07.970+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961627970] [levelValue: 800] getTreatment: Getting treatment 11dd5d97-9609-44ae-a0fb-a90e3e9a50d9 in microservice client!
+
+[2025-04-06T17:47:07.991+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961627991] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.TreatmentDto (generic type edu.stevens.cs548.clinic.service.dto.TreatmentDto
+
+[2025-04-06T17:47:07.992+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961627992] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /treatment/view-treatment.xhtml
+
+[2025-04-06T17:47:09.452+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961629452] [levelValue: 800] getPatients: Getting all patients in microservice client!
+
+[2025-04-06T17:47:09.469+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961629469] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.PatientDto>
+
+[2025-04-06T17:47:10.338+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961630338] [levelValue: 800] getPatient: Getting patient a827cc5e-b80b-4719-8597-658197eeddf1 in microservice client!
+
+[2025-04-06T17:47:10.392+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961630392] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.PatientDto (generic type edu.stevens.cs548.clinic.service.dto.PatientDto
+
+[2025-04-06T17:47:10.394+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961630394] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /patient/view-patient.xhtml
+
+[2025-04-06T17:48:21.085+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961701085] [levelValue: 800] getPatient: Getting patient a827cc5e-b80b-4719-8597-658197eeddf1 in microservice client!
+
+[2025-04-06T17:48:21.141+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961701141] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.PatientDto (generic type edu.stevens.cs548.clinic.service.dto.PatientDto
+
+[2025-04-06T17:48:21.144+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961701144] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /patient/view-patient.xhtml
+
+[2025-04-06T17:50:19.718+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961819718] [levelValue: 800] getProviders: Getting all providers in microservice client!
+
+[2025-04-06T17:50:19.773+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961819773] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.ProviderDto>
+
+[2025-04-06T17:50:20.563+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961820563] [levelValue: 800] getProvider: Getting provider 8ec1e51f-730c-4205-9c8a-07d8bc47e3c6 in microservice client!
+
+[2025-04-06T17:50:20.587+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961820587] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.ProviderDto (generic type edu.stevens.cs548.clinic.service.dto.ProviderDto
+
+[2025-04-06T17:50:20.589+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961820589] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /provider/view-provider.xhtml
+
+[2025-04-06T17:52:01.121+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961921121] [levelValue: 800] getPatients: Getting all patients in microservice client!
+
+[2025-04-06T17:52:01.121+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961921121] [levelValue: 800] getPatients: Getting all patients in microservice client!
+
+[2025-04-06T17:52:01.185+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961921185] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.PatientDto>
+
+[2025-04-06T17:52:01.185+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=96 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1743961921185] [levelValue: 800] Reading object of type java.util.List (generic type java.util.List<edu.stevens.cs548.clinic.service.dto.PatientDto>
+
+[2025-04-06T17:52:02.166+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961922166] [levelValue: 800] getPatient: Getting patient a827cc5e-b80b-4719-8597-658197eeddf1 in microservice client!
+
+[2025-04-06T17:52:02.194+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961922194] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.PatientDto (generic type edu.stevens.cs548.clinic.service.dto.PatientDto
+
+[2025-04-06T17:52:02.196+0000] [] [[1;93mWARNING[0m] [faces.metadata.invalid.location] [[1;94mjakarta.enterprise.resource.webcontainer.faces.taglib[0m] [tid: _ThreadID=95 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1743961922196] [levelValue: 900] JSF1103: The metadata facet must be a direct child of the view in viewId /patient/view-patient.xhtml
+
