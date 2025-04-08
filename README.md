@@ -69,6 +69,7 @@ The system is composed of the following components:
 
 - 📹 **Screen Recording**: Demonstrates complete deployment and system in action  
 (_includes docker builds, kubectl usage, browser & IntelliJ tests_)
+https://drive.google.com/drive/folders/1q5yXihyF2dNNMIOtPKcLeF81dFsY7OJi?usp=sharing
 
 ---
 
